@@ -1,0 +1,345 @@
+*{
+	margin: 0;
+	padding:  0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+/*this gives the css part to each and every table */
+table, th, td {
+  			border: 1px solid black;
+  			border-collapse: collapse;
+		}
+/*this is for all heading part*/
+h1 {
+	font-size: 40px;
+	line-height: 64px;
+	color: #0f0f0f;
+	font-display: flex;
+}
+
+h2 {
+	font-size: 30px;
+	line-height: 54px;
+	color: #0f0f0f;
+}
+
+h4 {
+	font-size: 20px;
+	color: #0f0f0f;
+	line-height: 54px;
+}
+
+h6 {
+	font-weight: 700;
+	font-size: 12px;
+}
+
+p {
+	font-size: 18px;
+	font-family: sans-serif;
+	text-align: center;
+	padding: 10px 10px 10px 10px;
+
+}
+
+.section-p1 {
+	padding: 40px 80px;
+}
+
+.section-m1 {
+	margin: 40px 0;
+}
+/*these are use for normal button in any part of the webpages*/
+button.normal {
+	font-size: 14px;
+	font-weight: 600;
+	padding: 15px 30px;
+	color: #000;
+	background-color: #fff;
+	border-radius: 4px;
+	cursor: pointer;
+	border: none;
+	transition: 0.2s;
+}
+/*these are used for white button*/
+button.white {
+	font-size: 13px;
+	font-weight: 600;
+	padding: 11px 18px;
+	color: #fff;
+	background-color: transparent;
+	cursor: pointer;
+	border: 1px solid #fff;
+	outline: none;
+	transition: 0.2s;
+}
+body {
+	width: 100%;
+}
+/* This css tag is used for Home page  to build the attractive and responsive header */
+#header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px 80px;
+	background: #12327D;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 2);
+	z-index: 999;
+	top: 0;
+	left: 0;
+}
+/*This css tag is used style the footer part of the homepage to look cool*/
+#footer {
+	display: flex;
+	height: 30vh;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px 80px;
+	background: #12327D;
+	box-shadow: 0px 5px 15px rgba(0, 0, 0, 2);
+}
+/* This css part is used to style the navbar in one row */
+#navbar {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+/* This css part is use to remove the dotted part which is shown prerviously in the nav bar */
+#navbar li{
+	list-style: none;
+	padding: 0 20px;
+	position: relative;
+}
+/* This css part is used to remove the underlined part which comes by using anchor tag in nav bar*/
+#navbar li a{
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: 600;
+	color: #1c181c;
+	transition: 0.3s ease;
+}
+/* this css tag is used to change the color of nav bar when it hover */
+#navbar li a:hover {
+	color: #5bded7;
+}
+/* this css is use to to underline half of the text of navbar when it is hovered*/
+#navbar li a.active::after,
+#navbar li a:hover::after {/*this tag is used so that the hover effect of underline can observe in all the navbar*/
+	content: "";
+	width: 40%;
+	height: 2px;
+	background: #5bded7;
+	position: absolute;
+	bottom: -4px;
+	left:  20px;
+}
+/*This css tagg is used to give that image and heading text proper style */
+#hero {
+	height: 80vh;
+	width: 100%;
+	text-align: center;
+	background: #3ebecf;
+}
+/*this is used to bring the form and text in one row */
+#newsletter {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+	background: #1165bf;
+}
+/*this css cod is used to style heading part of it */
+#newsletter h4 {
+	font-size: 22px;
+	font-weight: 700;
+	color:  #fff;
+}
+/*this is use for paragraph used in this only */
+#newsletter p {
+	font-size: 14px;
+	font-weight: 600px;
+	color: #fff;
+}
+/* this gives the color to the span part which is speical offers for special part*/
+#newsletter p span {
+	color: #ffbd27;
+}
+
+#newsletter .form {
+	display: flex;
+	width: 40%;
+}
+/*for styling the form part this is used*/
+#newsletter input {
+	height: 3.125rem;
+	padding: 0 1.25em;
+	font-size: 14px;
+	width: 100%;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	outline: none;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+/*  styling only for this page this code is used  */
+#newsletter button {
+	background-color: #088178;
+	color: #fff;
+	white-space: nowrap;
+	width: 40%;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+/* for the products*/
+/*This css is used to align the text into the center */
+#product {
+	text-align: center;
+}
+/*this is used so that the image can stay in the row instead of column */
+#product .pro-container {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 25px;
+	flex-wrap: wrap;/*this wrap is used to break the line because the products image are showing in one line */
+}
+/*this is used for providing the border of the image which is very thin */
+#product .pro {
+	width: 23%;
+	min-width: 250px;
+	padding: 10px 12px;
+	border: 1px solid #fcdf03;
+	border-radius: 25px;
+	cursor: pointer;
+	box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.2);
+	margin: 15px 0;
+	transition: 0.2s ease;
+}
+/*this used for hovering the image which is used in the products part */
+#product .pro:hover {
+	box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.6);
+}
+/*this css is used so that the image can get perfect width and height */
+#product .pro img {
+	width: 100%;
+	border-radius: 20px;
+}
+/*this used to give proper style to the text description used in products */
+#product .pro .des {
+	text-align: start;
+	padding: 10px 0;
+}
+#product .pro .des span {
+	color: #0606063;
+	font-size: 12px;
+}
+/*this gives the structure to the heading h5 */
+#product .pro .des h5 {
+	padding-top: 7px;
+	color: #1a1a1a;
+	font-size: 14px;
+}
+/*this gives the structure to the heading h4 */
+#product .pro .des h4 {
+	padding-top: 7px;
+	font-size: 15px;
+	font-weight: 700;
+	color: #088178;
+}
+/*This is used style the banner */
+#sm-banner .banner-box {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: #f5af47;
+	width: 100%;
+	height: 35vh;
+	box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.6);
+
+}
+/*this code is specially for heading used in banner */
+#sm-banner h4 {
+	color: #fff;
+	font-size: 20px;
+	font-weight: 300;
+}
+/*this code is specially for heading used in banner */
+#sm-banner h2 {
+	color: #fff;
+	font-size: 28px;
+	font-weight: 800;
+}
+/*this is the external css code to style the span part */
+#sm-banner span {
+	color: #fff;
+	font-size: 14px;
+	font-weight: 500;
+	padding-bottom: 15px;
+}
+/* this is used for hovering the button used in the banner */
+#sm-banner .banner-box:hover button {
+	background: #088178;
+	border: 1px solid #088178;
+}
+/*this is used for styling the button part used in the product page*/
+#product button {
+	background-color: #088178;
+	color: #fff;
+	white-space: nowrap;
+	width: 40%;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	
+}
+
+/*for the blog page */
+/*this css gives the style which are used inside the section*/
+#blog {
+	padding-top: 100px;
+}
+/*it gives proper and better style to the text part of the blog*/
+#blog .blog-details {
+	width: 60%;
+	margin-left: 300px;
+	background-color: #52e6eb;
+	border-radius: 15px;
+}
+/*thsi is specially for the image used in this only*/
+#blog img {
+	width: 80%;
+	margin-left: 150px;
+	height: 75vh;
+	border-radius: 15px;
+}
+
+/*External css for the research part*/
+#left2 h4 {
+	color: #0e3452;
+	text-align: center;
+	font-size: 40px;
+}
+/*this gives proper style to the text part of research*/
+#research-details {
+	width: 40%;
+	margin-left: 450px;
+	border-radius: 15px;
+	background-color: #fcba03;
+}
+#left img {
+	width: 70%;
+}
+#note {
+	background-color: #18ded7;
+	width: 80%;
+}
+/* External CSS for the contact part */
+
+#contact {
+	text-align: center;
+	background-color: #34ebe1;
+	width: 100%;
+	height: 70vh;
+}
+

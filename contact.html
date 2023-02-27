@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contact</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<!--this is main section used for header part it also uses the external css--->
+	<section id="header">
+		<a href="#"><img src="Images\Free_Sample_By_Wix (2).jfif" class="logo" alt=""></a>
+		<!--this div is used for navigation bar this also contains the external css--->
+		<div>
+			<ul id="navbar"><!--this navbar is used to contain the link of all webpages--->
+				<li><a href="index.html">Home</a></li>
+				<li><a href="product.html">Product</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="research.html">Research</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</div>
+	</section>
+	<!--this is main div inside which the whole contact page is present --->
+	<div id="contact">
+		<h4>Contact Us For Further Queries</h4>
+		<br>
+		<!--this is external javascript which is used to show date andn time by clicking on button --->
+		<button type="button" onclick="displayDate()">Show Date </button>
+		<p id="showdate"></p>
+
+
+		<!--html form is created for the user input--->
+		<form name="messageForm" onsubmit="validateForm()">
+			<!--this gives the label for the firstname --->
+			<label>First Name: </label>
+			<input type="text" name="fname">
+			<br>
+			<br>
+
+			<!--this gives the label for the last name --->
+			<label>Last Name: </label>
+			<input type="text" name="lname">
+			<br>
+			<br>
+			
+			<!-- this gives the label of emailid--->
+			<label for="email">Email : </label>
+			<input type="text" name="email">
+			<br>
+			<br>
+
+			<!--this gives the label of gender --->
+			<label>Gender: </label>
+			<!--the radio button is created for both male and female --->
+			<input type="radio" name="genderDetails" value="male" checked>Male
+			<input type="radio" name="genderDetails" value="female">Female
+			<br>
+			<br>
+		
+			<label>Message:</label>
+			<br>
+			<textarea rows="10" cols="25" name="message" placeholder="Enter your message"></textarea>
+			<br>
+			<br>
+
+			<input type="submit" value="Submit Button">
+		</form>
+	</div>
+
+	<section id="footer">
+
+		<a href=""><img src="Images\Free_Sample_By_Wix (2).jfif"></a>
+
+		<div>
+			<h4>Offer Days</h4>
+
+			<table>
+  				<tr>
+    				<th>Day</th>
+    				<th>Savings</th>
+  				</tr>
+  				<tr>
+    				<td>Friday</td>
+    				<td>$100</td>
+  				</tr>
+  				<tr>
+    				<td>Saturday</td>
+    				<td>$80</td>
+  				</tr>
+			</table>
+		</div>
+
+		<div>
+			<h6>Contact us</h6>
+			<br>
+			<h6>Delivery Information</h6>
+			<p>Pay through the card</p>
+		</div>
+		<div>
+			<h6>About us</h6>
+			<br>
+			<h6>arksahani@gmail.com</h6>
+			<h6>Privacy policy</h6>
+			<p>@ 2022, Abhitech etc - HTML CSS Ecommerce Tempelate</p>
+		</div>
+	</section>
+
+
+	<script type="text/javascript"src="script.js"></script>
+
+</body>
+</html>
